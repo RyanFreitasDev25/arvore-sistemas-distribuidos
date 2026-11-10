@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Árvore Genealógica dos Sistemas Operacionais Distribuídos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Árvore Genealógica dos Sistemas Operacionais Distribuídos</h1>
+  <p>Clique em um sistema para ver sua história, características técnicas e referências.</p>
+  <small>Disciplina: Sistemas Distribuídos · Bacharelado em Sistemas de Informação</small>
+</header>
+<main>
+  <section id="tree-wrap" aria-label="Árvore genealógica">
+    <div id="legend">
+      <span><i class="ln solid"></i> Derivação / herança direta</span>
+      <span><i class="ln dashed"></i> Influência</span>
+      <span>Borda tracejada = precursor (não distribuído)</span>
+    </div>
+    <div id="tree-scroll"><div id="tree"><svg id="lines"></svg></div></div>
+  </section>
+  <aside id="panel" hidden aria-live="polite"></aside>
+</main>
+<section id="sobre">
+  <h2>Sobre o Projeto</h2>
+  <p>Trabalho acadêmico da disciplina de Sistemas Distribuídos (Bacharelado em Sistemas de Informação). Apresenta a genealogia de sistemas operacionais distribuídos historicamente relevantes, com base em artigos científicos. Campos sem confirmação nas fontes aparecem como "Não identificado nas fontes consultadas".</p>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

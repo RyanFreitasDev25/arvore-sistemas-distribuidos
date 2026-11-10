@@ -1,0 +1,28 @@
+:root{--bg:#0d1526;--card:#16213a;--tx:#e6ebf5;--mut:#9aa8c4;--ac:#4fc3f7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,Segoe UI,Roboto,sans-serif}
+header,#sobre{padding:24px 5vw;max-width:1200px;margin:auto}
+h1{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 6px}
+small{color:var(--mut)}
+main{display:flex;gap:20px;padding:0 5vw;max-width:1200px;margin:auto;flex-wrap:wrap}
+#tree-wrap{flex:1 1 560px;min-width:0}
+#legend{display:flex;gap:18px;font-size:.85rem;color:var(--mut);margin-bottom:8px;flex-wrap:wrap}
+.ln{display:inline-block;width:28px;border-top:2px solid var(--mut);vertical-align:middle}
+.ln.dashed{border-top-style:dashed}
+#tree-scroll{overflow-x:auto;background:#111b30;border-radius:14px;padding:16px}
+#tree{position:relative;display:grid;grid-template-columns:repeat(3,170px);column-gap:70px;row-gap:22px;width:max-content;margin:auto}
+#lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.node{position:relative;z-index:1;background:var(--card);border:2px solid var(--c);border-radius:12px;padding:10px;text-align:center;cursor:pointer;color:var(--tx);font:inherit;transition:transform .15s,box-shadow .15s}
+.node b{display:block}.node span{font-size:.8rem;color:var(--mut)}
+.node:hover,.node:focus-visible{transform:translateY(-2px);box-shadow:0 0 12px var(--c);outline:none}
+.node.sel{background:var(--c);color:#0d1526}.node.sel span{color:#0d1526}
+#panel{flex:1 1 340px;background:var(--card);border-radius:14px;padding:18px;max-height:80vh;overflow:auto}
+#panel h2{margin:0 0 4px}#panel h3{font-size:1rem;color:var(--ac);margin:14px 0 4px}
+#panel p,#panel li{margin:2px 0;font-size:.95rem}
+#panel ul{padding-left:18px}
+#panel a{color:var(--ac)}
+#close{float:right;background:none;border:1px solid var(--mut);color:var(--tx);border-radius:8px;padding:2px 10px;cursor:pointer}
+#sobre{color:var(--mut)}
+.node.prec{border-style:dashed;opacity:.9}
+.grp{grid-column:1/4;grid-row:5;color:var(--mut);font-size:.85rem;border-top:1px solid #2a3858;padding-top:6px;margin-top:6px}
+#tree{grid-template-columns:repeat(3,190px)}
